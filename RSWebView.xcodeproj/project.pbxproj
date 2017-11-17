@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B783745F06CEE97E1BBE4A0 /* Pods_RSWebViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B56C69912A163F5BBF2445 /* Pods_RSWebViewTests.framework */; };
+		34074CA71FBEDA4F004D6133 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34074CA61FBEDA4F004D6133 /* TableViewController.swift */; };
+		34EDA0C31FBEBCB800FED9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0C21FBEBCB800FED9DD /* AppDelegate.swift */; };
+		34EDA0C51FBEBCB800FED9DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0C41FBEBCB800FED9DD /* ViewController.swift */; };
+		34EDA0C81FBEBCB800FED9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EDA0C61FBEBCB800FED9DD /* Main.storyboard */; };
+		34EDA0CA1FBEBCB800FED9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EDA0C91FBEBCB800FED9DD /* Assets.xcassets */; };
+		34EDA0CD1FBEBCB800FED9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EDA0CB1FBEBCB800FED9DD /* LaunchScreen.storyboard */; };
+		34EDA0D81FBEBCB900FED9DD /* RSWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0D71FBEBCB900FED9DD /* RSWebViewTests.swift */; };
+		34EDA0E31FBEBCB900FED9DD /* RSWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0E21FBEBCB900FED9DD /* RSWebViewUITests.swift */; };
+		34EDA0F11FBEBD6D00FED9DD /* SwiftWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0F01FBEBD6C00FED9DD /* SwiftWebVC.swift */; };
+		34EDA0F41FBECB2400FED9DD /* SwiftModalWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0F31FBECB2400FED9DD /* SwiftModalWebVC.swift */; };
+		53AAC274347A1B298335765D /* Pods_RSWebViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E3A6B2C69A2A0FAEE99F2C /* Pods_RSWebViewUITests.framework */; };
+		9C51E0D109F839BB6D2B4564 /* Pods_RSWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3487E653B6F8F08B65315A1B /* Pods_RSWebView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34EDA0D41FBEBCB900FED9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34EDA0B71FBEBCB800FED9DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34EDA0BE1FBEBCB800FED9DD;
+			remoteInfo = RSWebView;
+		};
+		34EDA0DF1FBEBCB900FED9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34EDA0B71FBEBCB800FED9DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34EDA0BE1FBEBCB800FED9DD;
+			remoteInfo = RSWebView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10B56C69912A163F5BBF2445 /* Pods_RSWebViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSWebViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34074CA61FBEDA4F004D6133 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3487E653B6F8F08B65315A1B /* Pods_RSWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34EDA0BF1FBEBCB800FED9DD /* RSWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34EDA0C21FBEBCB800FED9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34EDA0C41FBEBCB800FED9DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34EDA0C71FBEBCB800FED9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34EDA0C91FBEBCB800FED9DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34EDA0CC1FBEBCB800FED9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34EDA0CE1FBEBCB800FED9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34EDA0D31FBEBCB900FED9DD /* RSWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34EDA0D71FBEBCB900FED9DD /* RSWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSWebViewTests.swift; sourceTree = "<group>"; };
+		34EDA0D91FBEBCB900FED9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34EDA0DE1FBEBCB900FED9DD /* RSWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34EDA0E21FBEBCB900FED9DD /* RSWebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSWebViewUITests.swift; sourceTree = "<group>"; };
+		34EDA0E41FBEBCB900FED9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34EDA0F01FBEBD6C00FED9DD /* SwiftWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVC.swift; sourceTree = "<group>"; };
+		34EDA0F31FBECB2400FED9DD /* SwiftModalWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModalWebVC.swift; sourceTree = "<group>"; };
+		758004BAB0B7AF4FD36321AC /* Pods-RSWebViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSWebViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSWebViewTests/Pods-RSWebViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77E3A6B2C69A2A0FAEE99F2C /* Pods_RSWebViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSWebViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A87952518A5B92E59B8DD94 /* Pods-RSWebViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSWebViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSWebViewUITests/Pods-RSWebViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC2D67283769D89F2E37376D /* Pods-RSWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSWebView/Pods-RSWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		B0F162E24308A0F40E89B031 /* Pods-RSWebViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSWebViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSWebViewUITests/Pods-RSWebViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B116BDB586BC7BC3DE26BF07 /* Pods-RSWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSWebView/Pods-RSWebView.release.xcconfig"; sourceTree = "<group>"; };
+		E9FE66A924E39E1ABCFE8D3B /* Pods-RSWebViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSWebViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSWebViewTests/Pods-RSWebViewTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34EDA0BC1FBEBCB800FED9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C51E0D109F839BB6D2B4564 /* Pods_RSWebView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EDA0D01FBEBCB900FED9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B783745F06CEE97E1BBE4A0 /* Pods_RSWebViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EDA0DB1FBEBCB900FED9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AAC274347A1B298335765D /* Pods_RSWebViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34074CA81FBEDE16004D6133 /* SwiftWebView */ = {
+			isa = PBXGroup;
+			children = (
+				34EDA0F01FBEBD6C00FED9DD /* SwiftWebVC.swift */,
+				34EDA0F31FBECB2400FED9DD /* SwiftModalWebVC.swift */,
+			);
+			path = SwiftWebView;
+			sourceTree = "<group>";
+		};
+		34EDA0B61FBEBCB800FED9DD = {
+			isa = PBXGroup;
+			children = (
+				34EDA0C11FBEBCB800FED9DD /* RSWebView */,
+				34EDA0D61FBEBCB900FED9DD /* RSWebViewTests */,
+				34EDA0E11FBEBCB900FED9DD /* RSWebViewUITests */,
+				34EDA0C01FBEBCB800FED9DD /* Products */,
+				C538BA3C9BED81224331541E /* Pods */,
+				B681A33612B568178EA1A684 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34EDA0C01FBEBCB800FED9DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34EDA0BF1FBEBCB800FED9DD /* RSWebView.app */,
+				34EDA0D31FBEBCB900FED9DD /* RSWebViewTests.xctest */,
+				34EDA0DE1FBEBCB900FED9DD /* RSWebViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34EDA0C11FBEBCB800FED9DD /* RSWebView */ = {
+			isa = PBXGroup;
+			children = (
+				34EDA0C21FBEBCB800FED9DD /* AppDelegate.swift */,
+				34074CA61FBEDA4F004D6133 /* TableViewController.swift */,
+				34EDA0C41FBEBCB800FED9DD /* ViewController.swift */,
+				34074CA81FBEDE16004D6133 /* SwiftWebView */,
+				34EDA0C61FBEBCB800FED9DD /* Main.storyboard */,
+				34EDA0C91FBEBCB800FED9DD /* Assets.xcassets */,
+				34EDA0CB1FBEBCB800FED9DD /* LaunchScreen.storyboard */,
+				34EDA0CE1FBEBCB800FED9DD /* Info.plist */,
+			);
+			path = RSWebView;
+			sourceTree = "<group>";
+		};
+		34EDA0D61FBEBCB900FED9DD /* RSWebViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				34EDA0D71FBEBCB900FED9DD /* RSWebViewTests.swift */,
+				34EDA0D91FBEBCB900FED9DD /* Info.plist */,
+			);
+			path = RSWebViewTests;
+			sourceTree = "<group>";
+		};
+		34EDA0E11FBEBCB900FED9DD /* RSWebViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34EDA0E21FBEBCB900FED9DD /* RSWebViewUITests.swift */,
+				34EDA0E41FBEBCB900FED9DD /* Info.plist */,
+			);
+			path = RSWebViewUITests;
+			sourceTree = "<group>";
+		};
+		B681A33612B568178EA1A684 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3487E653B6F8F08B65315A1B /* Pods_RSWebView.framework */,
+				10B56C69912A163F5BBF2445 /* Pods_RSWebViewTests.framework */,
+				77E3A6B2C69A2A0FAEE99F2C /* Pods_RSWebViewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C538BA3C9BED81224331541E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC2D67283769D89F2E37376D /* Pods-RSWebView.debug.xcconfig */,
+				B116BDB586BC7BC3DE26BF07 /* Pods-RSWebView.release.xcconfig */,
+				758004BAB0B7AF4FD36321AC /* Pods-RSWebViewTests.debug.xcconfig */,
+				E9FE66A924E39E1ABCFE8D3B /* Pods-RSWebViewTests.release.xcconfig */,
+				B0F162E24308A0F40E89B031 /* Pods-RSWebViewUITests.debug.xcconfig */,
+				8A87952518A5B92E59B8DD94 /* Pods-RSWebViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34EDA0BE1FBEBCB800FED9DD /* RSWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34EDA0E71FBEBCB900FED9DD /* Build configuration list for PBXNativeTarget "RSWebView" */;
+			buildPhases = (
+				091CC0283E8D3C238C65FF52 /* [CP] Check Pods Manifest.lock */,
+				34EDA0BB1FBEBCB800FED9DD /* Sources */,
+				34EDA0BC1FBEBCB800FED9DD /* Frameworks */,
+				34EDA0BD1FBEBCB800FED9DD /* Resources */,
+				175AE0A95CEADB3195BBEA41 /* [CP] Embed Pods Frameworks */,
+				EED6A5B98DC4695FF68390D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSWebView;
+			productName = RSWebView;
+			productReference = 34EDA0BF1FBEBCB800FED9DD /* RSWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34EDA0D21FBEBCB900FED9DD /* RSWebViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34EDA0EA1FBEBCB900FED9DD /* Build configuration list for PBXNativeTarget "RSWebViewTests" */;
+			buildPhases = (
+				5F812AF5524B6405843D13EE /* [CP] Check Pods Manifest.lock */,
+				34EDA0CF1FBEBCB900FED9DD /* Sources */,
+				34EDA0D01FBEBCB900FED9DD /* Frameworks */,
+				34EDA0D11FBEBCB900FED9DD /* Resources */,
+				CF42D86393817D279B76BA27 /* [CP] Embed Pods Frameworks */,
+				F717E296116ED8F3EB4D586A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34EDA0D51FBEBCB900FED9DD /* PBXTargetDependency */,
+			);
+			name = RSWebViewTests;
+			productName = RSWebViewTests;
+			productReference = 34EDA0D31FBEBCB900FED9DD /* RSWebViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34EDA0DD1FBEBCB900FED9DD /* RSWebViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34EDA0ED1FBEBCB900FED9DD /* Build configuration list for PBXNativeTarget "RSWebViewUITests" */;
+			buildPhases = (
+				1C449E1237B22D68687B1E36 /* [CP] Check Pods Manifest.lock */,
+				34EDA0DA1FBEBCB900FED9DD /* Sources */,
+				34EDA0DB1FBEBCB900FED9DD /* Frameworks */,
+				34EDA0DC1FBEBCB900FED9DD /* Resources */,
+				3C951EEB344A2D8368D099A8 /* [CP] Embed Pods Frameworks */,
+				3D1186CCC7F64884D3EC103F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34EDA0E01FBEBCB900FED9DD /* PBXTargetDependency */,
+			);
+			name = RSWebViewUITests;
+			productName = RSWebViewUITests;
+			productReference = 34EDA0DE1FBEBCB900FED9DD /* RSWebViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34EDA0B71FBEBCB800FED9DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = R.S;
+				TargetAttributes = {
+					34EDA0BE1FBEBCB800FED9DD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					34EDA0D21FBEBCB900FED9DD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34EDA0BE1FBEBCB800FED9DD;
+					};
+					34EDA0DD1FBEBCB900FED9DD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34EDA0BE1FBEBCB800FED9DD;
+					};
+				};
+			};
+			buildConfigurationList = 34EDA0BA1FBEBCB800FED9DD /* Build configuration list for PBXProject "RSWebView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34EDA0B61FBEBCB800FED9DD;
+			productRefGroup = 34EDA0C01FBEBCB800FED9DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34EDA0BE1FBEBCB800FED9DD /* RSWebView */,
+				34EDA0D21FBEBCB900FED9DD /* RSWebViewTests */,
+				34EDA0DD1FBEBCB900FED9DD /* RSWebViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34EDA0BD1FBEBCB800FED9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EDA0CD1FBEBCB800FED9DD /* LaunchScreen.storyboard in Resources */,
+				34EDA0CA1FBEBCB800FED9DD /* Assets.xcassets in Resources */,
+				34EDA0C81FBEBCB800FED9DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EDA0D11FBEBCB900FED9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EDA0DC1FBEBCB900FED9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		091CC0283E8D3C238C65FF52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSWebView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		175AE0A95CEADB3195BBEA41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RSWebView/Pods-RSWebView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WebViewBridge.Swift/WebViewBridge_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewBridge_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebView/Pods-RSWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C449E1237B22D68687B1E36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSWebViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C951EEB344A2D8368D099A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewUITests/Pods-RSWebViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D1186CCC7F64884D3EC103F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewUITests/Pods-RSWebViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F812AF5524B6405843D13EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSWebViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF42D86393817D279B76BA27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewTests/Pods-RSWebViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED6A5B98DC4695FF68390D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebView/Pods-RSWebView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F717E296116ED8F3EB4D586A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewTests/Pods-RSWebViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34EDA0BB1FBEBCB800FED9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EDA0C51FBEBCB800FED9DD /* ViewController.swift in Sources */,
+				34EDA0F41FBECB2400FED9DD /* SwiftModalWebVC.swift in Sources */,
+				34EDA0C31FBEBCB800FED9DD /* AppDelegate.swift in Sources */,
+				34074CA71FBEDA4F004D6133 /* TableViewController.swift in Sources */,
+				34EDA0F11FBEBD6D00FED9DD /* SwiftWebVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EDA0CF1FBEBCB900FED9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EDA0D81FBEBCB900FED9DD /* RSWebViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EDA0DA1FBEBCB900FED9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EDA0E31FBEBCB900FED9DD /* RSWebViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34EDA0D51FBEBCB900FED9DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34EDA0BE1FBEBCB800FED9DD /* RSWebView */;
+			targetProxy = 34EDA0D41FBEBCB900FED9DD /* PBXContainerItemProxy */;
+		};
+		34EDA0E01FBEBCB900FED9DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34EDA0BE1FBEBCB800FED9DD /* RSWebView */;
+			targetProxy = 34EDA0DF1FBEBCB900FED9DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34EDA0C61FBEBCB800FED9DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34EDA0C71FBEBCB800FED9DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34EDA0CB1FBEBCB800FED9DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34EDA0CC1FBEBCB800FED9DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34EDA0E51FBEBCB900FED9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34EDA0E61FBEBCB900FED9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34EDA0E81FBEBCB900FED9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2D67283769D89F2E37376D /* Pods-RSWebView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				INFOPLIST_FILE = RSWebView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34EDA0E91FBEBCB900FED9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B116BDB586BC7BC3DE26BF07 /* Pods-RSWebView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				INFOPLIST_FILE = RSWebView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34EDA0EB1FBEBCB900FED9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758004BAB0B7AF4FD36321AC /* Pods-RSWebViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				INFOPLIST_FILE = RSWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSWebView.app/RSWebView";
+			};
+			name = Debug;
+		};
+		34EDA0EC1FBEBCB900FED9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FE66A924E39E1ABCFE8D3B /* Pods-RSWebViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				INFOPLIST_FILE = RSWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSWebView.app/RSWebView";
+			};
+			name = Release;
+		};
+		34EDA0EE1FBEBCB900FED9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F162E24308A0F40E89B031 /* Pods-RSWebViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				INFOPLIST_FILE = RSWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSWebView;
+			};
+			name = Debug;
+		};
+		34EDA0EF1FBEBCB900FED9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A87952518A5B92E59B8DD94 /* Pods-RSWebViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				INFOPLIST_FILE = RSWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSWebView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34EDA0BA1FBEBCB800FED9DD /* Build configuration list for PBXProject "RSWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EDA0E51FBEBCB900FED9DD /* Debug */,
+				34EDA0E61FBEBCB900FED9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34EDA0E71FBEBCB900FED9DD /* Build configuration list for PBXNativeTarget "RSWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EDA0E81FBEBCB900FED9DD /* Debug */,
+				34EDA0E91FBEBCB900FED9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34EDA0EA1FBEBCB900FED9DD /* Build configuration list for PBXNativeTarget "RSWebViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EDA0EB1FBEBCB900FED9DD /* Debug */,
+				34EDA0EC1FBEBCB900FED9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34EDA0ED1FBEBCB900FED9DD /* Build configuration list for PBXNativeTarget "RSWebViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EDA0EE1FBEBCB900FED9DD /* Debug */,
+				34EDA0EF1FBEBCB900FED9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34EDA0B71FBEBCB800FED9DD /* Project object */;
+}
