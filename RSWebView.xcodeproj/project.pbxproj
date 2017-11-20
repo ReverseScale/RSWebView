@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2B783745F06CEE97E1BBE4A0 /* Pods_RSWebViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B56C69912A163F5BBF2445 /* Pods_RSWebViewTests.framework */; };
 		34074CA71FBEDA4F004D6133 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34074CA61FBEDA4F004D6133 /* TableViewController.swift */; };
+		3433CC561FC281BD005E6791 /* SwiftBridgeWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433CC541FC281BD005E6791 /* SwiftBridgeWebVC.swift */; };
+		3433CC591FC28244005E6791 /* ZHData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433CC581FC28244005E6791 /* ZHData.swift */; };
+		3433CC5C1FC28273005E6791 /* html_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 3433CC5A1FC28273005E6791 /* html_template.html */; };
+		3433CC5D1FC28273005E6791 /* place_holder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3433CC5B1FC28273005E6791 /* place_holder.png */; };
 		34EDA0C31FBEBCB800FED9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0C21FBEBCB800FED9DD /* AppDelegate.swift */; };
 		34EDA0C51FBEBCB800FED9DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0C41FBEBCB800FED9DD /* ViewController.swift */; };
 		34EDA0C81FBEBCB800FED9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EDA0C61FBEBCB800FED9DD /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		10B56C69912A163F5BBF2445 /* Pods_RSWebViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSWebViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34074CA61FBEDA4F004D6133 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3433CC541FC281BD005E6791 /* SwiftBridgeWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBridgeWebVC.swift; sourceTree = "<group>"; };
+		3433CC581FC28244005E6791 /* ZHData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHData.swift; sourceTree = "<group>"; };
+		3433CC5A1FC28273005E6791 /* html_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = html_template.html; sourceTree = "<group>"; };
+		3433CC5B1FC28273005E6791 /* place_holder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = place_holder.png; sourceTree = "<group>"; };
 		3487E653B6F8F08B65315A1B /* Pods_RSWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EDA0BF1FBEBCB800FED9DD /* RSWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EDA0C21FBEBCB800FED9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,10 +106,22 @@
 		34074CA81FBEDE16004D6133 /* SwiftWebView */ = {
 			isa = PBXGroup;
 			children = (
+				3433CC5E1FC2828F005E6791 /* resources */,
 				34EDA0F01FBEBD6C00FED9DD /* SwiftWebVC.swift */,
 				34EDA0F31FBECB2400FED9DD /* SwiftModalWebVC.swift */,
+				3433CC541FC281BD005E6791 /* SwiftBridgeWebVC.swift */,
 			);
 			path = SwiftWebView;
+			sourceTree = "<group>";
+		};
+		3433CC5E1FC2828F005E6791 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				3433CC581FC28244005E6791 /* ZHData.swift */,
+				3433CC5B1FC28273005E6791 /* place_holder.png */,
+				3433CC5A1FC28273005E6791 /* html_template.html */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		34EDA0B61FBEBCB800FED9DD = {
@@ -299,8 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34EDA0CD1FBEBCB800FED9DD /* LaunchScreen.storyboard in Resources */,
+				3433CC5C1FC28273005E6791 /* html_template.html in Resources */,
 				34EDA0CA1FBEBCB800FED9DD /* Assets.xcassets in Resources */,
 				34EDA0C81FBEBCB800FED9DD /* Main.storyboard in Resources */,
+				3433CC5D1FC28273005E6791 /* place_holder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,8 +497,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3433CC591FC28244005E6791 /* ZHData.swift in Sources */,
 				34EDA0C51FBEBCB800FED9DD /* ViewController.swift in Sources */,
 				34EDA0F41FBECB2400FED9DD /* SwiftModalWebVC.swift in Sources */,
+				3433CC561FC281BD005E6791 /* SwiftBridgeWebVC.swift in Sources */,
 				34EDA0C31FBEBCB800FED9DD /* AppDelegate.swift in Sources */,
 				34074CA71FBEDA4F004D6133 /* TableViewController.swift in Sources */,
 				34EDA0F11FBEBD6D00FED9DD /* SwiftWebVC.swift in Sources */,

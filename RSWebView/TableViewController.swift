@@ -34,8 +34,10 @@ class TableViewController: UITableViewController {
             pushAppStore()
         case 2:
             modelWebView()
-        default:
+        case 3:
             modelWebViewDark()
+        default:
+            pushbridgeWebView()
         }
     }
 
@@ -57,6 +59,10 @@ class TableViewController: UITableViewController {
     func modelWebViewDark() {
         let webVC = SwiftModalWebVC(urlString: "https://www.baidu.com", theme: .dark, dismissButtonStyle: .arrow)
         self.present(webVC, animated: true, completion: nil)
+    }
+    func pushbridgeWebView() {
+        let webVC = SwiftBridgeWebVC()
+        self.navigationController?.pushViewController(webVC, animated: true)
     }
 }
 
