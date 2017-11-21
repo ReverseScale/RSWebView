@@ -62,11 +62,11 @@ let webVC = SwiftModalWebVC(urlString: "https://www.bing.com", theme: .lightBlac
 self.present(webVC, animated: true, completion: nil)
 ```
 ### JS与原生（Swift）交互
-1. 引入头文件
+1 引入头文件
 ```
 import WebViewBridge_Swift
 ```
-2. 搭建桥
+2 搭建桥
 ```
 var bridge:ZHWebViewBridge!
  //建立桥
