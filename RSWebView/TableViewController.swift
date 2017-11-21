@@ -43,7 +43,7 @@ class TableViewController: UITableViewController {
 
     
     func pushWebView() {
-        let webVC = SwiftWebVC(urlString: "https://www.baidu.com")
+        let webVC = SwiftWebVC(urlString: "https://www.bing.com")
         webVC.delegate = self
         self.navigationController?.pushViewController(webVC, animated: true)
     }
@@ -53,11 +53,11 @@ class TableViewController: UITableViewController {
         self.navigationController?.pushViewController(webVC, animated: true)
     }
     func modelWebView() {
-        let webVC = SwiftModalWebVC(urlString: "https://www.baidu.com", theme: .lightBlack, dismissButtonStyle: .cross)
+        let webVC = SwiftModalWebVC(urlString: "https://www.bing.com", theme: .lightBlack, dismissButtonStyle: .cross)
         self.present(webVC, animated: true, completion: nil)
     }
     func modelWebViewDark() {
-        let webVC = SwiftModalWebVC(urlString: "https://www.baidu.com", theme: .dark, dismissButtonStyle: .arrow)
+        let webVC = SwiftModalWebVC(urlString: "https://www.bing.com", theme: .dark, dismissButtonStyle: .arrow)
         self.present(webVC, animated: true, completion: nil)
     }
     func pushbridgeWebView() {
