@@ -44,36 +44,36 @@ pod install
 ## Usage 使用方法
 ### 封装使用
 Push 推出
-```
+``` swift
 let webVC = SwiftWebVC(urlString: "https://www.bing.com")
 webVC.delegate = self
 self.navigationController?.pushViewController(webVC, animated: true)
 ```
 跳转 App Store
-```
+``` swift
 let webVC = SwiftWebVC(urlString: "https://itunes.apple.com/us/app/habitminder/id1253577148?mt=8")
 webVC.delegate = self
 self.navigationController?.pushViewController(webVC, animated: true)
 ```
 model 弹出（主题效果）
-```
+``` swift
 let webVC = SwiftModalWebVC(urlString: "https://www.bing.com", theme: .lightBlack, dismissButtonStyle: .cross)
 //let webVC = SwiftModalWebVC(urlString: "https://www.bing.com", theme: .dark, dismissButtonStyle: .arrow)
 self.present(webVC, animated: true, completion: nil)
 ```
 ### JS与原生（Swift）交互
 1 引入头文件
-```
+``` swift
 import WebViewBridge_Swift
 ```
 2 搭建桥
-```
+``` swift
 var bridge:ZHWebViewBridge!
  //建立桥
 bridge = ZHWebViewBridge.bridge(webView)
 ```
 3.1 Native -> JS
-```
+``` swift
 /* Swift 部分
  * <1.2>原生调用 JS
  * 原生代码调用 js handler(在 HTML 或者 JS 中定义)
@@ -96,7 +96,7 @@ bridge.registerHandler("Device.GetAppVersion") { [weak self](args:[Any]) -> (Boo
     return (true, nil)
 }
 ```
-```
+``` js
     /* JS 部分
      * <1.1>原生调用 JS
      * 在 html 中或业务 js 中添加 js handler
@@ -105,7 +105,7 @@ bridge.registerHandler("Device.GetAppVersion") { [weak self](args:[Any]) -> (Boo
     ZHBridge.Core.registerJsHandler("Image.updateImageAtIndex", MYBusiness.Image.updateImageAtIndex);
 ```
 3.2 JS -> Native
-```
+``` swift
 /* Swift 部分
  * <2.1>JS 调用原生
  * 原生代码中, bridge 注册 native handler
@@ -129,7 +129,7 @@ bridge.registerHandler("Image.DownloadImage") { [weak self](args:[Any]) -> (Bool
     return (false, nil)
 }
 ```
-```
+``` js
   /* JS 部分
    * <2.2>JS 调用原生
    * 在原生中添加的 handler
