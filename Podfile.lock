@@ -1,0 +1,12 @@
+PODS:
+  - WebViewBridge.Swift (2.2)
+
+DEPENDENCIES:
+  - WebViewBridge.Swift (~> 2.2)
+
+SPEC CHECKSUMS:
+  WebViewBridge.Swift: dadfcad1f75b8895ae67d9614a6ab775b7f0688f
+
+PODFILE CHECKSUM: 6a4bb578c4c843b598a4df3b5cc6f64069ba8a26
+
+COCOAPODS: 1.4.0

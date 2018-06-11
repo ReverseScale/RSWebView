@@ -12,7 +12,7 @@ import WebViewBridge_Swift
 
 class SwiftBridgeWebVC: UIViewController {
     var webView:WKWebView!
-    var bridge:ZHWebViewBridge!
+    var bridge:ZHWebViewBridge<WKWebView>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
