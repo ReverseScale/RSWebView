@@ -126,7 +126,6 @@ extension SwiftBridgeWebVC {
             ZHData.instance.downloadImage(image, handler: { [weak self](file:String) in
                 self?.bridge.callJsHandler("Image.updateImageAtIndex", args: [file, index], callback: nil)
             })
-            
         }
     }
     

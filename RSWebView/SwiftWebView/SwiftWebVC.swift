@@ -8,6 +8,9 @@
 
 import WebKit
 
+private let titleKeyPath = "title"
+private let estimatedProgressKeyPath = "estimatedProgress"
+
 public protocol SwiftWebVCDelegate: class {
     func didStartLoading()
     func didFinishLoading(success: Bool)
@@ -23,12 +26,35 @@ public class SwiftWebVC: UIViewController {
     var request: URLRequest!
     var navBarTitle: UILabel!
     
+    public final var progressBar: UIProgressView {
+        get {
+            return _progressBar
+        }
+    }
+
+    // MARK: KVO
+    open override func observeValue(forKeyPath keyPath: String?,
+                                    of object: Any?,
+                                    change: [NSKeyValueChangeKey : Any]?,
+                                    context: UnsafeMutableRawPointer?) {
+        guard let theKeyPath = keyPath , object as? WKWebView == webView else {
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+            return
+        }
+        
+        if theKeyPath == estimatedProgressKeyPath {
+            updateProgress()
+        }
+    }
+    
     //初始化
     deinit {
         webView.stopLoading()
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         webView.uiDelegate = nil;
         webView.navigationDelegate = nil;
+        webView.removeObserver(self, forKeyPath: titleKeyPath, context: nil)
+        webView.removeObserver(self, forKeyPath: estimatedProgressKeyPath, context: nil)
     }
 
     //系统方法
@@ -39,6 +65,13 @@ public class SwiftWebVC: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(progressBar)
+        view.bringSubview(toFront: progressBar)
+        progressBar.frame = CGRect(x: view.frame.minX,
+                                   y: webView.safeAreaInsets.top,
+                                   width: view.frame.size.width,
+                                   height: 2)
     }
     
     override public func viewWillAppear(_ animated: Bool) {
@@ -98,14 +131,45 @@ public class SwiftWebVC: UIViewController {
         webView.load(request)
     }
     
-    
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.frame = view.bounds
+        
+        let isIOS11 = ProcessInfo.processInfo.isOperatingSystemAtLeast(
+            OperatingSystemVersion(majorVersion: 11, minorVersion: 0, patchVersion: 0))
+        let top = isIOS11 ? CGFloat(0.0) : topLayoutGuide.length
+        let insets = UIEdgeInsets(top: top, left: 0, bottom: 0, right: 0)
+        webView.scrollView.contentInset = insets
+        webView.scrollView.scrollIndicatorInsets = insets
+        
+        view.bringSubview(toFront: progressBar)
+        progressBar.frame = CGRect(x: view.frame.minX,
+                                   y: topLayoutGuide.length,
+                                   width: view.frame.size.width,
+                                   height: 2)
+    }
+
+    private final func updateProgress() {
+        let completed = webView.estimatedProgress == 1.0
+        progressBar.setProgress(completed ? 0.0 : Float(webView.estimatedProgress), animated: !completed)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = !completed
+    }
     //MARK:懒加载
     //WebView控件
     lazy var webView: WKWebView = {
         var tempWebView = WKWebView(frame: UIScreen.main.bounds)
         tempWebView.uiDelegate = self
         tempWebView.navigationDelegate = self
+        tempWebView.addObserver(self, forKeyPath: titleKeyPath, options: .new, context: nil)
+        tempWebView.addObserver(self, forKeyPath: estimatedProgressKeyPath, options: .new, context: nil)
         return tempWebView;
+    }()
+    //ProgressView控件
+    private lazy final var _progressBar: UIProgressView = {
+        let progressBar = UIProgressView(progressViewStyle: .bar)
+        progressBar.backgroundColor = .clear
+        progressBar.trackTintColor = .clear
+        return progressBar
     }()
     //底部后退按钮
     lazy var backBarButtonItem: UIBarButtonItem =  {
