@@ -13,11 +13,12 @@
 		3433CC591FC28244005E6791 /* ZHData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433CC581FC28244005E6791 /* ZHData.swift */; };
 		3433CC5C1FC28273005E6791 /* html_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 3433CC5A1FC28273005E6791 /* html_template.html */; };
 		3433CC5D1FC28273005E6791 /* place_holder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3433CC5B1FC28273005E6791 /* place_holder.png */; };
+		344AE04F20CE76F700792AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344AE04D20CE76F600792AC9 /* LaunchScreen.storyboard */; };
+		344AE05020CE76F700792AC9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 344AE04E20CE76F700792AC9 /* Default.png */; };
 		34EDA0C31FBEBCB800FED9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0C21FBEBCB800FED9DD /* AppDelegate.swift */; };
 		34EDA0C51FBEBCB800FED9DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0C41FBEBCB800FED9DD /* ViewController.swift */; };
 		34EDA0C81FBEBCB800FED9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EDA0C61FBEBCB800FED9DD /* Main.storyboard */; };
 		34EDA0CA1FBEBCB800FED9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EDA0C91FBEBCB800FED9DD /* Assets.xcassets */; };
-		34EDA0CD1FBEBCB800FED9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EDA0CB1FBEBCB800FED9DD /* LaunchScreen.storyboard */; };
 		34EDA0D81FBEBCB900FED9DD /* RSWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0D71FBEBCB900FED9DD /* RSWebViewTests.swift */; };
 		34EDA0E31FBEBCB900FED9DD /* RSWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0E21FBEBCB900FED9DD /* RSWebViewUITests.swift */; };
 		34EDA0F11FBEBD6D00FED9DD /* SwiftWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EDA0F01FBEBD6C00FED9DD /* SwiftWebVC.swift */; };
@@ -50,13 +51,14 @@
 		3433CC581FC28244005E6791 /* ZHData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHData.swift; sourceTree = "<group>"; };
 		3433CC5A1FC28273005E6791 /* html_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = html_template.html; sourceTree = "<group>"; };
 		3433CC5B1FC28273005E6791 /* place_holder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = place_holder.png; sourceTree = "<group>"; };
+		344AE04D20CE76F600792AC9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		344AE04E20CE76F700792AC9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3487E653B6F8F08B65315A1B /* Pods_RSWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EDA0BF1FBEBCB800FED9DD /* RSWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EDA0C21FBEBCB800FED9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34EDA0C41FBEBCB800FED9DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34EDA0C71FBEBCB800FED9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34EDA0C91FBEBCB800FED9DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		34EDA0CC1FBEBCB800FED9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34EDA0CE1FBEBCB800FED9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EDA0D31FBEBCB900FED9DD /* RSWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EDA0D71FBEBCB900FED9DD /* RSWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSWebViewTests.swift; sourceTree = "<group>"; };
@@ -155,7 +157,8 @@
 				34074CA81FBEDE16004D6133 /* SwiftWebView */,
 				34EDA0C61FBEBCB800FED9DD /* Main.storyboard */,
 				34EDA0C91FBEBCB800FED9DD /* Assets.xcassets */,
-				34EDA0CB1FBEBCB800FED9DD /* LaunchScreen.storyboard */,
+				344AE04D20CE76F600792AC9 /* LaunchScreen.storyboard */,
+				344AE04E20CE76F700792AC9 /* Default.png */,
 				34EDA0CE1FBEBCB800FED9DD /* Info.plist */,
 			);
 			path = RSWebView;
@@ -318,10 +321,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34EDA0CD1FBEBCB800FED9DD /* LaunchScreen.storyboard in Resources */,
 				3433CC5C1FC28273005E6791 /* html_template.html in Resources */,
+				344AE05020CE76F700792AC9 /* Default.png in Resources */,
 				34EDA0CA1FBEBCB800FED9DD /* Assets.xcassets in Resources */,
 				34EDA0C81FBEBCB800FED9DD /* Main.storyboard in Resources */,
+				344AE04F20CE76F700792AC9 /* LaunchScreen.storyboard in Resources */,
 				3433CC5D1FC28273005E6791 /* place_holder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,14 +551,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		34EDA0CB1FBEBCB800FED9DD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				34EDA0CC1FBEBCB800FED9DD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -670,7 +666,6 @@
 			baseConfigurationReference = AC2D67283769D89F2E37376D /* Pods-RSWebView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QT42R489Z;
 				INFOPLIST_FILE = RSWebView/Info.plist;
@@ -687,7 +682,6 @@
 			baseConfigurationReference = B116BDB586BC7BC3DE26BF07 /* Pods-RSWebView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QT42R489Z;
 				INFOPLIST_FILE = RSWebView/Info.plist;
