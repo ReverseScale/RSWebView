@@ -217,7 +217,6 @@
 				34EDA0BC1FBEBCB800FED9DD /* Frameworks */,
 				34EDA0BD1FBEBCB800FED9DD /* Resources */,
 				175AE0A95CEADB3195BBEA41 /* [CP] Embed Pods Frameworks */,
-				EED6A5B98DC4695FF68390D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,8 +235,6 @@
 				34EDA0CF1FBEBCB900FED9DD /* Sources */,
 				34EDA0D01FBEBCB900FED9DD /* Frameworks */,
 				34EDA0D11FBEBCB900FED9DD /* Resources */,
-				CF42D86393817D279B76BA27 /* [CP] Embed Pods Frameworks */,
-				F717E296116ED8F3EB4D586A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,8 +254,6 @@
 				34EDA0DA1FBEBCB900FED9DD /* Sources */,
 				34EDA0DB1FBEBCB900FED9DD /* Frameworks */,
 				34EDA0DC1FBEBCB900FED9DD /* Resources */,
-				3C951EEB344A2D8368D099A8 /* [CP] Embed Pods Frameworks */,
-				3D1186CCC7F64884D3EC103F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,36 +396,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3C951EEB344A2D8368D099A8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewUITests/Pods-RSWebViewUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D1186CCC7F64884D3EC103F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewUITests/Pods-RSWebViewUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5F812AF5524B6405843D13EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,51 +412,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF42D86393817D279B76BA27 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewTests/Pods-RSWebViewTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EED6A5B98DC4695FF68390D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebView/Pods-RSWebView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F717E296116ED8F3EB4D586A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSWebViewTests/Pods-RSWebViewTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -667,7 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = RSWebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebView;
@@ -683,7 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = RSWebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebView;
@@ -700,7 +620,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = RSWebViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewTests;
@@ -718,7 +638,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = RSWebViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewTests;
@@ -735,7 +655,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = RSWebViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewUITests;
@@ -752,7 +672,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QT42R489Z;
+				DEVELOPMENT_TEAM = MQ4BAK6QRP;
 				INFOPLIST_FILE = RSWebViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSWebViewUITests;

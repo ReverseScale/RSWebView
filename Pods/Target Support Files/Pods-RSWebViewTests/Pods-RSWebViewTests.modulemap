@@ -1,0 +1,6 @@
+framework module Pods_RSWebViewTests {
+  umbrella header "Pods-RSWebViewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
