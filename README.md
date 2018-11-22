@@ -10,7 +10,7 @@
 
 | 名称 |1.列表页 |2.导航推出 |3.模态推出 |3.桥接示例 |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 截图 | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/43931712.jpg) | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/74004186.jpg) | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/60599804.jpg) | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/9275528.jpg) |
+| 截图 | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/43931712.jpg) | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/74004186.jpg) | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/60599804.jpg) | ![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/62029476.jpg) |
 | 描述 | 通过 storyboard 搭建基本框架 | push 推出视图封装 | Modal (暗版)推出视图封装 | JS原生交互演示页 |
 
 
